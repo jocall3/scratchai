@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI App - From Scratch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>AI App - The Genesis</h1>
+            <nav>
+                <button id="nav-chat" class="active">Chat</button>
+                <button id="nav-agents">Agents</button>
+                <button id="nav-models">Models</button>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <!-- Content for Chat, Agents, Models will be loaded here by JavaScript -->
+            <section id="chat-view" class="view active">
+                <h2>Chat Interface</h2>
+                <div id="chat-history">
+                    <div class="message system">Welcome to your AI Chat!</div>
+                    <!-- Chat messages will be dynamically added here -->
+                </div>
+                <form id="chat-form">
+                    <textarea id="chat-input" placeholder="Type your message..." rows="3"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+
+            <section id="agents-view" class="view">
+                <h2>AI Agents Dashboard</h2>
+                <div class="agent-list">
+                    <!-- Agent cards will be dynamically added here -->
+                    <div class="agent-card">
+                        <h3>Agent Alpha</h3>
+                        <p>Status: Idle</p>
+                        <button class="agent-action">Start Task</button>
+                    </div>
+                    <div class="agent-card">
+                        <h3>Agent Beta</h3>
+                        <p>Status: Working on "Data Analysis"</p>
+                        <button class="agent-action">View Progress</button>
+                    </div>
+                </div>
+                <button id="create-agent-btn">Create New Agent</button>
+            </section>
+
+            <section id="models-view" class="view">
+                <h2>Custom AI Models</h2>
+                <div class="model-list">
+                    <!-- Model cards will be dynamically added here -->
+                    <div class="model-card">
+                        <h3>Text Generator v1</h3>
+                        <p>Type: Transformer (Decoder-only)</p>
+                        <p>Status: Trained</p>
+                        <button class="model-action">Use Model</button>
+                    </div>
+                    <div class="model-card">
+                        <h3>Image Classifier v1</h3>
+                        <p>Type: CNN</p>
+                        <p>Status: Training (70%)</p>
+                        <button class="model-action">Monitor Training</button>
+                    </div>
+                </div>
+                <button id="create-model-btn">Train New Model</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 AI App - Built From Scratch</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
